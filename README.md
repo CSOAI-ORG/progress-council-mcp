@@ -6,7 +6,8 @@ mcp-name: io.github.CSOAI-ORG/bft-progress-council-mcp
 # BFT Progress Council MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
-[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![GSPC](https://img.shields.io/badge/GSPC-live%20GET%20%2Fapi%2Fgspc-0ea5e9)](https://councilof.ai/api/gspc)
+[![Measurement](https://img.shields.io/badge/Measurement-not%20certification-64748b)](https://councilof.ai/api/gspc)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/bft_progress_council_mcp/)
 
@@ -40,17 +41,14 @@ npx -y @smithery/cli@latest install bft-progress-council-mcp --client claude
 - [API Reference](https://api.meok.ai)
 - [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## 🛡️ Compliance
+## Honesty register (2026-09-02)
 
-This MCP server is built with **EU AI Act compliance** built-in:
+**Live authority is `GET https://councilof.ai/api/gspc`** — cite `totals.public_count` and `totals.lid` from that payload. Do not type axis counts into this README.
 
-- ✅ Article 9 — Risk Management System
-- ✅ Article 13 — Transparency & Instructions for Use
-- ✅ Article 15 — Bias Detection & Testing
-- ✅ Article 26 — FRIA Support (where applicable)
-- ✅ Article 50 — AI Content Watermarking (where applicable)
+- **Measurement, not certification.** CSOAI Ltd measures and signs; it does not certify, accredit, or act as a notified body.
+- **MEOK.ai is a shelf / frontend**, not a second Council. Printers and agents must read the live GSPC endpoint — never invent scores, never wrangler a stamp.
+- Prefer honest **UNCHECKABLE** over a fake stamp. This package does **not** certify EU AI Act compliance.
 
-Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
 ## 🏢 Enterprise
 
@@ -67,9 +65,9 @@ This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300
 
 | Domain | Purpose |
 |--------|---------|
-| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [councilof.ai](https://councilof.ai) | Independent measurement board — live `GET /api/gspc` |
 | [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
-| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [meok.ai](https://meok.ai) | Shelf / frontend (not a second Council) |
 | [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
 ## 📜 License
@@ -85,7 +83,7 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 - **Audit Logger** → `uvx agent-audit-logger-mcp`
 - **Policy Enforcement** → `uvx agent-policy-enforcement-mcp`
 - **Rate Limiter** → `uvx agent-rate-limiter-mcp`
-- **Certified Handoff** → `uvx agent-handoff-certified-mcp`
+- **Signed handoff (attestation, not a certificate)** → `uvx agent-handoff-certified-mcp`
 - **Identity + Trust** → `uvx agent-identity-trust-mcp`
 
 Full catalogue + Anthropic Registry verify links: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
