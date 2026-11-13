@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-BFT Progress Council MCP — Anti-Loop Guardrail
-================================================
+Progress Council MCP — Anti-Loop Guardrail
+==========================================
 
 By MEOK AI Labs · https://meok.ai · MIT
 <!-- mcp-name: io.github.CSOAI-ORG/bft-progress-council-mcp -->
@@ -14,7 +14,9 @@ the agent gets stuck retrying the same approach, claiming progress but doing not
 
 THE SOLUTION
 ------------
-Byzantine Fault Tolerant council that votes on whether real progress is happening.
+5-voter majority-tally council that votes on whether real progress is happening
+(note: earlier "Byzantine/BFT" phrasing retracted 2026-07-29; see
+https://councilof.ai/api/corrections).
 After every N actions (configurable), the council inspects the last K actions plus
 the stated goal and votes:
   - PROGRESS — at least 3 of 5 say "yes, real movement"
@@ -179,7 +181,7 @@ _METER_URL = "https://proofof.ai/verify"
 @mcp.tool()
 def start_session(goal: str, session_id: Optional[str] = None) -> dict:
     """
-    Start a new BFT Progress Council session.
+    Start a new Progress Council anti-loop session.
 
     Args:
         goal: The original objective the agent is trying to accomplish.
@@ -233,7 +235,7 @@ def record_action(session_id: str, action: str, outcome: str = "") -> dict:
 @mcp.tool()
 def council_vote(session_id: str, lookback: int = 10) -> dict:
     """
-    Run the 5-voter Byzantine council on recent actions.
+    Run the 5-voter majority-tally council on recent actions.
 
     Args:
         session_id: Returned from start_session().
@@ -261,8 +263,8 @@ def council_vote(session_id: str, lookback: int = 10) -> dict:
         votes.append({"voter": name, "verdict": verdict, "reason": reason})
         tally[verdict] += 1
 
-    # 3-of-5 BFT threshold (f<n/3 means up to 1 byzantine voter tolerated → need ≥4
-    # for true BFT but 3-of-5 majority is the practical halt threshold).
+    # 3-of-5 simple majority halt threshold (consensus-strength BFT phrasing
+    # retracted 2026-07-29; see https://councilof.ai/api/corrections).
     halt_verdicts = ["STALL", "DRIFT", "BLOCKED"]
     halt_votes = sum(tally[v] for v in halt_verdicts)
     if halt_votes >= 3:
@@ -372,7 +374,7 @@ def list_voters() -> dict:
             {"name": "action_velocity", "detects": "rapid-fire spinning with no human-loop pause"},
             {"name": "artefact_growth", "detects": "no tangible artefacts being produced"},
         ],
-        "halt_threshold": "3-of-5 (BFT majority)",
+        "halt_threshold": "3-of-5 (majority tally)",
         "hint": "Pro tier swaps these heuristics for 5 actual LLM voters (Claude/GPT/Gemini/Llama/Step).",
     }
 
