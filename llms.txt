@@ -1,6 +1,6 @@
 # bft-progress-council-mcp
 
-> BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs.
+> Progress Council MCP — 5-voter majority-tally anti-loop guardrail halts agentic loops when no real progress is happening (earlier "Byzantine/BFT" consensus-strength phrasing retracted 2026-07-29; see https://councilof.ai/api/corrections). Stops tokens bleeding on infinite spins. By MEOK AI Labs.
 
 MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
 

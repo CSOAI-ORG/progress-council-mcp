@@ -1,9 +1,7 @@
 [![MCP Scorecard: 90/100](https://img.shields.io/badge/proofof.ai-90%2F100-5b21b6)](https://proofof.ai/scorecard/bft-progress-council-mcp.html)
 
-# Bft Progress Council MCP
+# Progress Council MCP (`bft-progress-council-mcp`)
 mcp-name: io.github.CSOAI-ORG/bft-progress-council-mcp
-
-# BFT Progress Council MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![GSPC](https://img.shields.io/badge/GSPC-live%20GET%20%2Fapi%2Fgspc-0ea5e9)](https://councilof.ai/api/gspc)
@@ -11,9 +9,11 @@ mcp-name: io.github.CSOAI-ORG/bft-progress-council-mcp
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/bft_progress_council_mcp/)
 
-> BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is...
+> Progress Council MCP — 5-voter majority-tally anti-loop guardrail halts agentic tool loops when no real progress is happening.
 
-BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. MIT-licensed. Part of MEOK A2A Substrate.
+Progress Council MCP (`bft-progress-council-mcp` package identifier retained for backwards compatibility) runs a 5-voter majority-tally guardrail (`3-of-5` halt threshold) to stop tokens bleeding on infinite agentic spins. MIT-licensed. Part of MEOK A2A Substrate.
+
+> **Public correction (`2026-07-29`):** Earlier descriptions called this 3-of-5 tally "Byzantine" / "BFT". A 3-of-5 threshold over 5 deterministic/LLM voters is a **simple majority tally**, not Byzantine fault tolerance ($3f + 1$ requires $n \ge 4$ for $f = 1$ with authenticated Byzantine agreement, which this server does not implement). The consensus-strength claim was retracted `2026-07-29` — see [`GET https://councilof.ai/api/corrections`](https://councilof.ai/api/corrections).
 
 ---
 
@@ -37,9 +37,11 @@ npx -y @smithery/cli@latest install bft-progress-council-mcp --client claude
 
 ## 📖 Documentation
 
-- [Full Documentation](https://docs.meok.ai/bft-progress-council-mcp)
-- [API Reference](https://api.meok.ai)
-- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
+- [Live GSPC Board (`GET /api/gspc`)](https://councilof.ai/api/gspc)
+- [Remote GSPC MCP (`https://councilof.ai/mcp`)](https://councilof.ai/mcp)
+- [Corrections Ledger (`GET /api/corrections`)](https://councilof.ai/api/corrections)
+- [Free Verifier (`/gspc-verify`)](https://councilof.ai/gspc-verify)
+- [MEOK Documentation](https://meok.ai)
 
 ## Honesty register (2026-09-02)
 
@@ -116,7 +118,7 @@ guardrail in the A2A Substrate.
 ## Wire it up — full stack
 
 This MCP is **step 1 of 6** in the MEOK chain that turns one agent action
-into a fully signed compliance event. See
+into a signed evidence event (measurement and auditability, not legal certification). See
 [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the 6-MCP chain:
 
 1. **bft-progress-council-mcp** (this) — anti-loop guardrail

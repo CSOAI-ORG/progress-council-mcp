@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bft-progress-council-mcp"
 version = "1.1.8"
-description = "BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs."
+description = "Progress Council MCP — 5-voter majority-tally anti-loop guardrail halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [{ name = "Nicholas Templeman", email = "nicholas@meok.ai" }]
-keywords = ["mcp", "mcp-server", "model-context-protocol", "byzantine", "bft", "council", "anti-loop", "agentic", "guardrail", "meok"]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "majority-tally", "council", "anti-loop", "agentic", "guardrail", "meok"]
 classifiers = [
   "Development Status :: 4 - Beta",
   "License :: OSI Approved :: MIT License",

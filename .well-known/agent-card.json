@@ -8,7 +8,7 @@
     "stateTransitionHistory": false
   },
   "protocolVersion": "0.3.0",
-  "description": "BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs.",
+  "description": "Progress Council MCP — 5-voter majority-tally anti-loop guardrail halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs.",
   "provider": {
     "organization": "MEOK AI LABS",
     "url": "https://meok.ai"
