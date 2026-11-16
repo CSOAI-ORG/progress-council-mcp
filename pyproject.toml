@@ -27,7 +27,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://meok.ai/a2a"
+Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/bft-progress-council-mcp"
 Issues = "https://github.com/CSOAI-ORG/bft-progress-council-mcp/issues"
 Documentation = "https://meok.ai/moe"

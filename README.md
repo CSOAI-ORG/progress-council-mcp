@@ -50,14 +50,11 @@ npx -y @smithery/cli@latest install bft-progress-council-mcp --client claude
 - Prefer honest **UNCHECKABLE** over a fake stamp. This package does **not** certify EU AI Act compliance.
 
 
-## 🏢 Enterprise
+## How MEOK charges
 
-Need custom development, SLA guarantees, or white-label deployment?
+MEOK has no subscriptions and no tiers. You pay per job, and only when the agreed artifact has been delivered to you. There is no public price list. See <https://meok.ai/pricing>.
 
-- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
-- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
-
-[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+This repository's source is MIT-licensed and free to self-host.
 
 ## 🤝 Part of the MEOK Ecosystem
 
@@ -86,7 +83,7 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 - **Signed handoff (attestation, not a certificate)** → `uvx agent-handoff-certified-mcp`
 - **Identity + Trust** → `uvx agent-identity-trust-mcp`
 
-Full catalogue + Anthropic Registry verify links: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Full catalogue + Anthropic Registry verify links: [https://meok.ai](https://meok.ai)
 
 ## Protocol coverage + Universal PAYG
 
@@ -101,10 +98,6 @@ Full catalogue + Anthropic Registry verify links: [meok.ai/anthropic-registry](h
 | Option | Price | Best for |
 |---|---|---|
 | Self-host (this MCP) | £0 — MIT | Devs |
-| This MCP Starter | £29/mo | One-MCP teams |
-| Universal PAYG | £29/mo + £0.0002/call | Spiky usage |
-| A2A Substrate | £499/mo | A whole pack |
-| Universe | £1,499/mo | All 48 MCPs |
 
 ## Why this matters for MEOK
 
@@ -117,7 +110,7 @@ guardrail in the A2A Substrate.
 
 This MCP is **step 1 of 6** in the MEOK chain that turns one agent action
 into a fully signed compliance event. See
-[meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the 6-MCP chain:
+[https://meok.ai](https://meok.ai) for the 6-MCP chain:
 
 1. **bft-progress-council-mcp** (this) — anti-loop guardrail
 2. **agent-token-budget-mcp** — hard spend cap
@@ -134,20 +127,6 @@ Output: ONE auditor-defensible evidence event mapped to EU AI Act Articles
 MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House
 16939677). Founder: [Nicholas Templeman](mailto:nicholas@meok.ai).
 
-<!-- BUY-LADDER:START -->
-
-## 💸 Try MEOK in 30 seconds — instant buy ladder
-
-| Tier | Price | What you get | Stripe |
-|---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
-
-> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
-> Verify any signed report at <https://meok.ai/verify>.
-
-<!-- BUY-LADDER:END -->
 
 
 ## Configuration
